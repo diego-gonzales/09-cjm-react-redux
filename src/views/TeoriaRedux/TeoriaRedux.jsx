@@ -1,6 +1,6 @@
-import reduxImg from '../assets/redux.jpg';
-import reduxGif from '../assets/redux.gif';
-import Navbar from '../components/Navbar';
+import reduxImg from '../../assets/redux.jpg';
+import reduxGif from '../../assets/redux.gif';
+import Navbar from '../../components/Navbar';
 
 const TeoriaRedux = () => {
   return (

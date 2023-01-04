@@ -1,11 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
-import ButtonHome from '../components/ButtonHome';
+import ButtonHome from '../../components/ButtonHome';
 import {
   increment,
   decrement,
   incrementByAmount,
   decrementByAmount,
-} from '../store/slices/counterSlice';
+} from '../../store/slices/counterSlice';
 
 const Counter = () => {
   const count = useSelector((state) => state.counter.value);

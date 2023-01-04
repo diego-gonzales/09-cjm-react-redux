@@ -4,10 +4,10 @@ import { store } from './store';
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-const TeoriaRedux = lazy(() => import('./views/TeoriaRedux'));
-const Counter = lazy(() => import('./views/Counter'));
-const ShoppingCart = lazy(() => import('./views/ShoppingCart'));
-const CrudAPI = lazy(() => import('./views/CrudAPI'));
+const TeoriaRedux = lazy(() => import('./views/TeoriaRedux/TeoriaRedux'));
+const Counter = lazy(() => import('./views/Counter/Counter'));
+const ShoppingCart = lazy(() => import('./views/ShoppingCart/ShoppingCart'));
+const CrudAPI = lazy(() => import('./views/CrudAPI/CrudAPI'));
 
 function App() {
   return (
