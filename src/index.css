@@ -77,3 +77,16 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+.mx-1 {
+  margin: 0px 10px;
+}
+
+.my-1 {
+  margin: 10px 0px;
+}
+
+.button-home {
+  background-color: #646cff;
+  
+}
