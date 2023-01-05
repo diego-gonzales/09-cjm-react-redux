@@ -2,6 +2,7 @@ import CartItem from './components/CartItem';
 import Product from './components/Product';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearCart } from '../../store/slices/shoppingCartSlice';
+import ButtonHome from '../../components/ButtonHome';
 
 const ShoppingCart = () => {
   const { products, cart } = useSelector((state) => state.shoppingCart);
@@ -35,6 +36,10 @@ const ShoppingCart = () => {
 
         {cart.length <= 0 && <p>Cart empty</p>}
       </article>
+
+      <div className="mx-1">
+        <ButtonHome />
+      </div>
     </div>
   );
 };

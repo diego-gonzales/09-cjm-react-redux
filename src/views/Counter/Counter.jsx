@@ -5,6 +5,7 @@ import {
   decrement,
   incrementByAmount,
   decrementByAmount,
+  reset,
 } from '../../store/slices/counterSlice';
 
 const Counter = () => {
@@ -16,13 +17,17 @@ const Counter = () => {
       <h2>Counter Redux</h2>
       <div className="my-1">
         <button onClick={() => dispatch(decrement())}>-</button>
-        <span className="mx-1">{count}</span>
         <button onClick={() => dispatch(increment())}>+</button>
       </div>
       <div className="my-1">
         <button onClick={() => dispatch(decrementByAmount(5))}>-5</button>
-        <span className="mx-1">{count}</span>
         <button onClick={() => dispatch(incrementByAmount(5))}>+5</button>
+      </div>
+      <div>
+        <button onClick={() => dispatch(reset())}>Reset</button>
+      </div>
+      <div className="mx-1">
+        <span>{count}</span>
       </div>
 
       <ButtonHome />
